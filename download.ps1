@@ -23,7 +23,7 @@ function PromptUser {
 
 
 
-$result = PromptUser -title "Run the Setup Script" -desc "Should we run the setup.ps1 script after the insallation. This script will install everything needed"  -choices @(
+$result = PromptUser "Run the Setup Script" "Should we run the setup.ps1 script after the insallation. This script will install everything needed" @(
     @("&yes", "Yes"),
     @("&no", "No")
 ) -default 1
