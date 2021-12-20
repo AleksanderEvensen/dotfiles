@@ -31,14 +31,16 @@ $result = PromptUser "Run the Setup Script" "Should we run the setup.ps1 script 
 write-host "Installing git..."
 # Download git cli tool
 winget install Git.Git
+# Refresh the path
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
 write-host "Git installed"
 write-host "Cloning repo"
 # Cloning the repo
-pushd $HOME
+Push-Location $HOME
 git clone https://github.com/AleksanderEvensen/dotfiles.git
-popd
+Pop-Location
 
-cd $HOME/dotfiles
+Set-Location $HOME/dotfiles
 
 if ($result -eq 0) {
     Invoke-Expression -Command "./setup.ps1"

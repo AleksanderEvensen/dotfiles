@@ -13,16 +13,7 @@
 					"PackageIdentifier" : "ShareX.ShareX"
 				},
 				{
-					"PackageIdentifier" : "Dashlane.Dashlane"
-				},
-				{
-					"PackageIdentifier" : "EliasFotinis.DeskPins"
-				},
-				{
 					"PackageIdentifier" : "Discord.Discord.Canary"
-				},
-				{
-					"PackageIdentifier" : "dev47apps.DroidCam"
 				},
 				{
 					"PackageIdentifier" : "voidtools.Everything"
@@ -32,9 +23,6 @@
 				},
 				{
 					"PackageIdentifier" : "Figma.fonthelper"
-				},
-				{
-					"PackageIdentifier" : "TimKosse.FileZilla.Client"
 				},
 				{
 					"PackageIdentifier" : "GitHub.GitHubDesktop"
@@ -52,16 +40,7 @@
 					"PackageIdentifier" : "Stremio.Stremio"
 				},
 				{
-					"PackageIdentifier" : "TeamViewer.TeamViewer"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Teams"
-				},
-				{
 					"PackageIdentifier" : "JAMSoftware.TreeSize.Free"
-				},
-				{
-					"PackageIdentifier" : "Ubisoft.Connect"
 				},
 				{
 					"PackageIdentifier" : "RARLab.WinRAR"
@@ -70,16 +49,10 @@
 					"PackageIdentifier" : "ApacheFriends.Xampp"
 				},
 				{
-					"PackageIdentifier" : "Elgato.StreamDeck"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
 					"PackageIdentifier" : "Nvidia.GeForceExperience"
-				},
-				{
-					"PackageIdentifier" : "Nvidia.Broadcast"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerToys"
@@ -95,9 +68,6 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.dotnet"
-				},
-				{
-					"PackageIdentifier" : "Balena.Etcher"
 				}, 
                 {
                     "PackageIdentifier": "BraveSoftware.BraveBrowser"
