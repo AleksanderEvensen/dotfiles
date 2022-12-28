@@ -26,4 +26,3 @@ Windows Registry Editor Version 5.00
 "HideDrivesWithNoMedia"=dword:00000000
 "AutoCheckSelect"=dword:00000001
 "UseCompactMode"=dword:00000001
-"HideDrivesWithNoMedia"=dword:00000000
