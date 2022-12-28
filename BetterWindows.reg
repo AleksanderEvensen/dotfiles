@@ -18,3 +18,4 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Keyboard Layout\Toggle]
 "Hotkey"="3"
 "Language Hotkey"="3"
+"Layout Hotkey"="3"
