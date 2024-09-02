@@ -1,0 +1,13 @@
+[user]
+    email = ahse03@gmail.com
+    name = Aleksander Evensen
+[init]
+    defaultBranch = main
+[core]
+    symlinks = true
+    editor = code --wait
+[alias]
+    pr = pull --rebase
+    puom = push -u origin main
+    st = status -s
+    cfg = config --global --edit

@@ -1,0 +1,9 @@
+git:
+  pull:
+    mode: 'rebase'
+
+quitOnTopLevelReturn: true
+disableStartupPopups: true
+
+gui:
+  nerdFontsVersion: "3"
