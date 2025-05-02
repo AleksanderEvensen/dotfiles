@@ -1,0 +1,60 @@
+[user]
+	email = ahse03@gmail.com
+	name = Aleksander Evensen
+
+# Basic options
+[core]
+    preloadindex = true
+    symlinks = true
+    editor = code --wait
+[format]
+    pretty="%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n"
+[pager]
+    branch = false
+    tag = false
+
+# Command configurations
+[init]
+    defaultBranch = main
+[status]
+    branch = true
+    showStash = true
+[diff]
+    renames = copies
+[push]
+    autoSetupRemote = true
+[pull]
+    rebase = true
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+[log]
+    abbrevCommit = true
+[branch]
+    sort = -committerdate
+[tag]
+    sort = -taggerdate
+
+# Aliases
+[alias]
+    pr = pull --rebase
+    puom = push -u origin main
+    st = status --short
+    cfg = config --global --edit
+    aa = "add -A"
+
+# URL shortcuts
+[url "git@github.com:AleksanderEvensen/"]
+    insteadOf = "aleks:"
+
+[url "git@github.com:"]
+    insteadOf = "gh:"
+
+
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

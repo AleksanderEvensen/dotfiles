@@ -1,0 +1,42 @@
+# oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
+# Add brew packages to path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+# Aliases
+alias cls="clear"
+alias ..="cd .."
+alias vim="nvim"
+alias vi="nvim"
+
+# bun completions
+[ -s "/Users/aleks/.bun/_bun" ] && source "/Users/aleks/.bun/_bun"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+export PNPM_HOME="/Users/aleks/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+
+alias ls="eza --icons --group-directories-first --time-style=\"+%d.%m.%Y %H:%M\""
+
+# FNM (Fast Node version Manager)
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Zoxide (better cd)
+eval "$(zoxide init zsh)"
+
+# Starship prompt
+eval "$(starship init zsh)"
+
+
+
+
+autoload -U compinit
+compinit -i
+

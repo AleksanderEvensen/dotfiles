@@ -61,7 +61,7 @@ symbol = " "
 symbol = " "
 
 [git_status]
-disabled = true
+disabled = false
 
 [golang]
 symbol = " "
