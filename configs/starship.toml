@@ -10,7 +10,7 @@ $character"""
 # Change the default prompt characters
 [character]
 success_symbol = " [\\$](fg:255)"
-error_symbol = " [\\$](fg:233)"
+error_symbol = " [\\$](fg:203)"
 
 # Shows the username
 [username]
