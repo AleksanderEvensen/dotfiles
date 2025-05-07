@@ -4,13 +4,13 @@ add_newline = true
 
 # Change the default prompt format
 format = """\
-[╭╴](238)$os$username\
-$all[╰─](238)$character"""
+$os$username$all\
+$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[󰁔](238)"
-error_symbol = "[󰁔](238)"
+success_symbol = " [\\$](fg:255)"
+error_symbol = " [\\$](fg:233)"
 
 # Shows the username
 [username]
@@ -28,25 +28,31 @@ read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [os]
-format = "$symbol"
+format = " $symbol"
 disabled = false
 
-# Chaning out all the symbols with nerdfont symbols
-[aws]
-symbol = "  "
-
-[buf]
-symbol = " "
+[os.symbols]
+Alpine = " "
+Arch = " "
+Debian = " "
+Fedora = " "
+Linux = " "
+Macos = " "
+Manjaro = " "
+Mint = "[󰣭](fg:83 bold) "
+SUSE = " "
+NixOS = " "
+Pop = " "
+Raspbian = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "[󰖳](fg:33) "
 
 [c]
 symbol = " "
 
-[conda]
-symbol = " "
-
 [dart]
 symbol = " "
-
 
 [docker_context]
 symbol = " "
@@ -66,14 +72,8 @@ disabled = false
 [golang]
 symbol = " "
 
-[guix_shell]
-symbol = " "
-
 [haskell]
 symbol = " "
-
-[haxe]
-symbol = "⌘ "
 
 [hg_branch]
 symbol = " "
@@ -81,17 +81,8 @@ symbol = " "
 [java]
 symbol = " "
 
-[julia]
-symbol = " "
-
 [lua]
 symbol = " "
-
-[memory_usage]
-symbol = " "
-
-[meson]
-symbol = "喝 "
 
 [nim]
 symbol = " "
@@ -102,38 +93,8 @@ symbol = " "
 [nodejs]
 symbol = " "
 
-[os.symbols]
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Gentoo = " "
-Linux = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = " "
-openSUSE = " "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = " "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = "[󰖳](fg:33) "
+[bun]
+symbol = " "
 
 [package]
 symbol = "󰏖 "
@@ -141,17 +102,9 @@ symbol = "󰏖 "
 [python]
 symbol = " "
 
-[rlang]
-symbol = "ﳒ "
-
 [ruby]
 symbol = " "
 
 [rust]
 symbol = " "
 
-[scala]
-symbol = " "
-
-[spack]
-symbol = "🅢 "
