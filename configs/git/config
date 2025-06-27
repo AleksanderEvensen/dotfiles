@@ -38,10 +38,11 @@
 # Aliases
 [alias]
     pr = pull --rebase
-    puom = push -u origin main
     st = status --short
     cfg = config --global --edit
     aa = "add -A"
+    sw = "switch"
+    cm = "commit -m"
 
 # URL shortcuts
 [url "git@github.com:AleksanderEvensen/"]
