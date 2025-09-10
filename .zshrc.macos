@@ -22,6 +22,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PNPM_HOME="/Users/aleks/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+export LESS="-F -X $LESS"
 
 alias ls="eza --icons --group-directories-first --time-style=\"+%d.%m.%Y %H:%M\""
 
@@ -34,8 +35,8 @@ eval "$(zoxide init zsh)"
 # Starship prompt
 eval "$(starship init zsh)"
 
-
-
+# JJ source-control
+source <(jj util completion zsh)
 
 autoload -U compinit
 compinit -i
