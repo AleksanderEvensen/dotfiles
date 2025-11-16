@@ -6,7 +6,7 @@
 [core]
     preloadindex = true
     symlinks = true
-    editor = code --wait
+    editor = nvim
 [format]
     pretty="%C(magenta)%h %C(white) %an %ar%C(auto) %D%n%s%n"
 [pager]
