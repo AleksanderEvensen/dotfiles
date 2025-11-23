@@ -21,6 +21,7 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
+
 -- Incremental search
 vim.opt.incsearch = true
 
@@ -38,12 +39,15 @@ vim.opt.signcolumn = "yes"
 -- Update time 500ms
 vim.opt.updatetime = 500
 
-
-
-
-
-
-
-
-
-
+vim.diagnostic.config({
+  virtual_text = {
+    severity = {
+      min = vim.diagnostic.severity.INFO, -- Display diagnostics from INFO level and above
+    },
+    source = true, -- Display the source of the diagnostic (e.g., 'lua_ls')
+    prefix = "● ", -- Prefix for virtual text messages
+  },
+  signs = true, -- Display signs in the sign column
+  underline = true, -- Underline problematic text
+  update_in_insert = false, -- Do not update diagnostics in insert mode
+})
