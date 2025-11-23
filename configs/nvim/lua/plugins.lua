@@ -25,7 +25,10 @@ vim.lsp.config["zls"] = {
 };
 
 require("nvim-treesitter.configs").setup {
-    ensure_installed = { "c", "lua", "markdown", "typescript", "javascript", "rust", "zig" }
+    ensure_installed = { "c", "lua", "markdown", "typescript", "javascript", "rust", "zig", "git_config", "gitcommit", "git_rebase" },
+    highlight = {
+        enable = true,
+    }
 }
 
 
