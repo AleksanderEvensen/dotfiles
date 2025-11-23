@@ -43,6 +43,7 @@
     aa = "add -A"
     sw = "switch"
     cm = "commit -m"
+    difft = "-c diff.external=difft diff"
 
 # URL shortcuts
 [url "git@github.com:AleksanderEvensen/"]
