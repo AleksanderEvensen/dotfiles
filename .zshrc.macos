@@ -12,6 +12,7 @@ alias ..="cd .."
 alias vim="nvim"
 alias vi="nvim"
 alias whisper="uvx --from openai-whisper whisper"
+alias lg="lazygit"
 
 # bun completions
 [ -s "/Users/aleks/.bun/_bun" ] && source "/Users/aleks/.bun/_bun"
