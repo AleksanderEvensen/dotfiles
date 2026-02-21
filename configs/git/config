@@ -1,6 +1,7 @@
 [user]
 	email = ahse03@gmail.com
 	name = Aleksander Evensen
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPILB1e574eEu9S0gC3BF5bPl2ILUIRo56YxFsBQGGDq
 
 # Basic options
 [core]
@@ -60,3 +61,9 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

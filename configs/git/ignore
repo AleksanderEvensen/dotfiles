@@ -2,6 +2,8 @@
 DEV NOTES.md
 DEV_NOTES.md
 
+.worktree/
+
 # Im never ever going to include node_modules in a git project, so im adding it globally
 node_modules/
 
