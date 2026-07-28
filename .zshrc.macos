@@ -13,6 +13,8 @@ alias vim="nvim"
 alias vi="nvim"
 alias whisper="uvx --from openai-whisper whisper"
 alias lg="lazygit"
+alias cc="codex --yolo"
+alias oc="opencode --yolo"
 
 # bun completions
 [ -s "/Users/aleks/.bun/_bun" ] && source "/Users/aleks/.bun/_bun"
@@ -43,8 +45,6 @@ source <(jj util completion zsh)
 # Typst Completions
 source <(typst completions zsh)
 
+
 autoload -U compinit
 compinit -i
-
-# Added by `rbenv init` on Fri Oct 17 13:21:23 CEST 2025
-eval "$(rbenv init - --no-rehash zsh)"

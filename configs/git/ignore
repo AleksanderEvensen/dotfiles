@@ -3,6 +3,12 @@ DEV NOTES.md
 DEV_NOTES.md
 
 .worktree/
+.claude/worktrees/
+
+.env
+.env.local
+AGENTS.override.md
+AGENTS.local.md
 
 # Im never ever going to include node_modules in a git project, so im adding it globally
 node_modules/

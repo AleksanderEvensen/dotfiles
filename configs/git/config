@@ -45,6 +45,9 @@
     sw = "switch"
     cm = "commit -m"
     difft = "-c diff.external=difft diff"
+    diffnav = "-c pager.diff=diffnav diff"
+	amend = commit --amend --no-edit
+	amend-edit = commit --amend
 
 # URL shortcuts
 [url "git@github.com:AleksanderEvensen/"]
