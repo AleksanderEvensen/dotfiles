@@ -1,4 +1,5 @@
 alias ".." "cd .."
+set -g fish_greeting
 alias lg lazygit
 alias cc "codex --yolo"
 alias oc "opencode --yolo"
@@ -20,25 +21,24 @@ alias cclauded "cclaude --dangerously-skip-permissions"
 
 zoxide init fish | source
 starship init fish | source
-fnm env --use-on-cd --shell fish | source
-
-# Added by zv setup
-source "$HOME/.zv/env.fish"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
 
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
-source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+if test (uname) = Darwin
+    # Added by OrbStack: command-line tools and integration
+    # This won't be added again if you remove it.
+    source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
-source $HOME/.turso/env.fish
+    set -gx JAVA_HOME (brew --prefix openjdk@17)
+    fish_add_path $JAVA_HOME/bin
 
+    set -gx ANDROID_HOME $HOME/Library/Android/sdk
+    fish_add_path $ANDROID_HOME/platform-tools
+end
 
-set -gx JAVA_HOME (brew --prefix openjdk@17)
-fish_add_path $JAVA_HOME/bin
-
-set -gx ANDROID_HOME $HOME/Library/Android/sdk
-fish_add_path $ANDROID_HOME/platform-tools
+if test -f "$HOME/.turso/env.fish"
+    source "$HOME/.turso/env.fish"
+end
 
 # pnpm
 set -gx PNPM_HOME "$HOME/Library/pnpm"
