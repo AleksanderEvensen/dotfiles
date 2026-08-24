@@ -6,6 +6,12 @@ source $ZSH/oh-my-zsh.sh
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
+# Editors
+export EDITOR="zed --wait"
+export VISUAL="zed --wait"
+export GIT_EDITOR="nvim"
+export GIT_SEQUENCE_EDITOR="nvim"
+
 # Aliases
 alias cls="clear"
 alias ..="cd .."
