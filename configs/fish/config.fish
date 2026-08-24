@@ -23,6 +23,7 @@ zoxide init fish | source
 starship init fish | source
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.bun/bin:$PATH"
+fish_add_path $HOME/.cargo/bin
 
 if test (uname) = Darwin
     # Added by OrbStack: command-line tools and integration
