@@ -7,6 +7,7 @@ alias cc='codex --yolo'
 alias pman='sudo pacman'
 alias cls="clear"
 alias lg="lazygit"
+alias tau="pi --no-session"
 
 export EDITOR="nvim"
 export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\x08//g\" | bat -p -lman'"

@@ -3,6 +3,7 @@ set -g fish_greeting
 alias lg lazygit
 alias cc "codex --yolo"
 alias oc "opencode --yolo"
+alias tau "pi --no-session"
 complete -c oc -e
 complete -c oc -w opencode
 

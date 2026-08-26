@@ -21,6 +21,7 @@ alias whisper="uvx --from openai-whisper whisper"
 alias lg="lazygit"
 alias cc="codex --yolo"
 alias oc="opencode --yolo"
+alias tau="pi --no-session"
 
 # bun completions
 [ -s "/Users/aleks/.bun/_bun" ] && source "/Users/aleks/.bun/_bun"
